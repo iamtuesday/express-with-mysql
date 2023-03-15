@@ -1,0 +1,20 @@
+.Footer {
+  @apply bg-[#1A1A1A];
+  @media screen(laptop) {
+    @apply flex justify-between items-center;
+    padding: calc(1.5rem * var(--scale)) calc(15rem * var(--scale));
+  }
+
+  &-Logo {
+    @media screen(laptop) {
+      width: calc(10rem * var(--scale));
+    }
+  }
+
+  &-Copyright {
+    @media screen(laptop) {
+      @apply text-white font-light font-roboto;
+      font-size: calc(1.8rem * var(--scale));
+    }
+  }
+}

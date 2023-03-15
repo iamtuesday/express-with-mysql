@@ -1,0 +1,65 @@
+.InfoHeader {
+  @apply hidden;
+
+  @media screen(laptop) {
+    @apply bg-[#01495F] block;
+  }
+
+  &-container {
+    width: 78.2%;
+    max-width: 150.2rem;
+    /* height: calc(4.8rem * var(--scale)); */
+    @apply flex justify-end mx-auto items-center;
+  }
+
+  &-container > .socials {
+    font-size: calc(2.5rem * var(--scale));
+    /* gap: calc(1rem * var(--scale)); */
+    /* margin-top: 0.3em; */
+    @apply flex text-white items-center;
+  }
+
+  &-container > .socials div {
+    &::before {
+      content: "";
+      width: 1px;
+      height: calc(4.9rem * var(--scale));
+      margin: 0 calc(2rem * var(--scale));
+      margin-bottom: -0.4em;
+      @apply bg-white inline-block;
+    }
+  }
+
+  &-ul {
+    font-size: calc(1.6rem * var(--scale));
+    @apply flex items-center text-white font-normal font-roboto;
+  }
+
+  &-li {
+    @apply flex items-center;
+  }
+
+  &-li::before {
+    content: "";
+    width: 1px;
+    height: calc(4.9rem * var(--scale));
+    margin: 0 calc(2rem * var(--scale));
+    @apply bg-white block;
+  }
+
+  &-a {
+    gap: calc(1.2rem * var(--scale));
+    @apply flex items-center;
+  }
+
+  &-iconMap,
+  &-iconMail,
+  &-24Hours {
+    font-size: calc(1.6rem * var(--scale));
+    /* margin-top: -0.1em; */
+  }
+
+  &-24Hours{
+    margin-top: 0.1em;
+  }
+}

@@ -1,0 +1,8 @@
+.Contenedor {
+    @apply px-[1.7rem];
+    @media screen(tabletxl) {
+       @apply p-0 w-[78.2%] mx-auto;
+       max-width: 147.6rem;
+    }
+ }
+ 

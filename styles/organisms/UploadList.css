@@ -1,0 +1,32 @@
+.UploadList {
+  @media screen(laptop) {
+    padding: calc(15rem * var(--scale)) calc(20rem * var(--scale));
+
+    &-ul {
+      @apply grid grid-cols-4 bg-primary;
+      margin-bottom: calc(4rem * var(--scale));
+    }
+    &-li {
+      @apply font-dmsans font-bold text-white;
+      padding: calc(1.5rem * var(--scale)) calc(2rem * var(--scale));
+      font-size: calc(2rem * var(--scale));
+    }
+    &-lists {
+      @apply flex flex-col;
+      gap: calc(1.5rem * var(--scale));
+    }
+    &-list {
+      @apply grid grid-cols-4;
+    }
+    &-item {
+      @apply font-roboto  font-light text-content;
+      font-size: calc(1.9rem * var(--scale));
+      padding: 0 calc(2rem * var(--scale));
+      border-bottom: 1px solid #606060;
+
+    }
+    &-download {
+        @apply text-primary font-normal;
+      }
+  }
+}

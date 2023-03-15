@@ -1,0 +1,23 @@
+/* .btn{
+    @apply bg-red-500;
+    &.defautl{
+        @apply bg-red-500;
+    }
+} */
+
+.btn {
+  &-default {
+    transition: all ease-in 0.4s;
+    @apply bg-primary font-dmsans font-medium text-[1.5rem]  text-white rounded-[4rem] px-[3rem] py-[1rem];
+
+    @media screen(laptop) {
+    @apply cursor-pointer;
+      padding: calc(1.25rem * var(--scale)) calc(2.8rem * var(--scale));
+      font-size: calc(1.8rem * var(--scale));
+    }
+
+    &:hover {
+      @apply bg-[#ef233c] text-white;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.ReviewCard {
+  @apply flex flex-col items-center justify-center gap-[1.5rem];
+  @media screen(laptop){
+    gap: calc(1.5rem * var(--scale));
+  }
+  &-content{
+    @apply flex flex-col gap-[1.5rem];;
+    @media screen(laptop){
+      gap: calc(4.4rem * var(--scale));
+    }
+  }
+  &-p {
+    @apply font-roboto italic font-normal text-[1.5rem] text-center  text-[#787878] px-[5rem];
+    @media screen(laptop) {
+      font-size: calc(1.9rem * var(--scale));
+      padding: 0 calc(8rem * var(--scale));
+    }
+  }
+  &-h3 {
+    font-size: calc(1.8rem * var(--scale));
+    @apply font-roboto  font-semibold text-[1.5rem] text-center text-[#787878];
+    @media screen(laptop) {
+      font-size: calc(1.8rem * var(--scale));
+    }
+  }
+  &-picture {
+    width: 6.7rem;
+    height: 6.7rem;
+    @apply relative rounded-full block isolate overflow-visible;
+    @media screen(laptop) {
+      width: calc(8rem * var(--scale));
+      height: calc(8rem * var(--scale));
+    }
+  }
+  &-img {
+    @apply rounded-full;
+  }
+}

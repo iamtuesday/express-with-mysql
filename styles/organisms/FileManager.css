@@ -1,0 +1,26 @@
+.FileManager{
+    @media screen(laptop){
+        @apply grid grid-cols-4;
+        padding: calc(10rem * var(--scale)) calc(20rem * var(--scale));
+        gap: calc(5rem * var(--scale));
+    }
+
+    &-Card{
+        @media screen(laptop){
+            @apply cursor-pointer flex flex-col items-center;
+        }
+    }
+
+    &-h2{
+        @media screen(laptop){
+            @apply text-white font-dmsans font-normal uppercase;
+            font-size: calc(1.8rem * var(--scale));
+        }
+    }
+
+    &-File{
+        @media screen(laptop){
+            width: calc(10rem * var(--scale));
+        }
+    }
+}

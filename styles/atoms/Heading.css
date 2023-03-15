@@ -1,0 +1,33 @@
+.Heading {
+  &-h3 {
+    @apply text-[1.5rem] font-rubik font-bold text-[#313131] tracking-[0.05em] leading-[1] uppercase;
+    @media screen(laptop) {
+      font-size: calc(1.8rem * var(--scale));
+    }
+  }
+  &-h2 {
+    @apply text-[2.5rem] font-rubik font-bold text-[#313131]  leading-[145%];
+    @media screen(laptop) {
+      @apply leading-[138%];
+      font-size: calc(4rem * var(--scale));
+      margin-top: calc(1.7rem * var(--scale));
+    }
+  }
+}
+
+.Heading-white {
+  .Heading-h3 {
+    @apply text-[1.5rem] font-rubik font-bold text-white tracking-[0.05em] leading-[78%] uppercase;
+    @media screen(laptop) {
+      font-size: calc(1.8rem * var(--scale));
+    }
+  }
+
+  .Heading-h2 {
+    @apply text-[2.5rem] font-rubik font-bold text-white  leading-[145%] mt-[0.5rem];
+    @media screen(laptop) {
+      font-size: calc(4rem * var(--scale));
+      margin-top: calc(1.7rem * var(--scale));
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.Map {
+    iframe{
+        @apply w-full h-[30rem];
+    }
+  @media screen(laptop) {
+    iframe {
+      height: calc(52.8rem * var(--scale));
+    }
+  }
+}

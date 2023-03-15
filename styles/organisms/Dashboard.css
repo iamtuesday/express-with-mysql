@@ -1,0 +1,26 @@
+.Dashboard {
+  @apply grid grid-cols-[25%_75%] min-h-screen;
+  &-Options {
+    @apply bg-black;
+    padding: calc(5rem * var(--scale)) calc(2.5rem * var(--scale));
+  }
+  &-Body {
+    @apply bg-[#e3e3e3];
+  }
+  &-h2 {
+    @apply text-white font-dmsans;
+  }
+  &-ul {
+    @apply font-bold flex flex-col;
+    gap: calc(1rem * var(--scale));
+  }
+  &-li {
+    @apply text-red-500 font-roboto font-medium cursor-pointer;
+    margin-left: calc(1rem * var(--scale));
+    font-size: calc(1.8rem * var(--scale));
+
+    .category {
+      @apply text-white font-roboto font-light;
+    }
+  }
+}

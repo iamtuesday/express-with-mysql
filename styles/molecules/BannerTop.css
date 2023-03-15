@@ -1,0 +1,46 @@
+.BannerTop{
+    @apply w-full h-[14.3rem] relative  isolate;
+    background-image: var(--img-mobile); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &::after{
+        content: '';
+        background: rgba(5, 108, 242, 0.8);
+        /* mix-blend-mode: multiply; */
+        @apply absolute inset-0 z-[-1];
+    } 
+    &-content{
+        @apply absolute left-[3.2rem] bottom-[2rem];
+    }
+
+    &-p{
+        @apply font-roboto font-medium text-[1.5rem] leading-[170%] uppercase text-white; 
+        &::before{
+            content: "/ ";
+        }
+    }
+    &-h2{
+        @apply font-dmsans font-medium text-[2.5rem] leading-[120%] text-white;
+        letter-spacing: -0.01em;
+    }
+
+    @media screen(laptop){
+        background-image: var(--img-dektop); 
+        height: calc(38.4rem * var(--scale));
+        
+        &-content{
+            @apply absolute;
+            left: calc(21.3rem * var(--scale));
+            bottom: calc(8.2rem * var(--scale));
+        }
+        &-p{
+            font-size: calc(1.7rem * var(--scale));
+        }
+        &-h2{
+            font-size: calc(5.5rem * var(--scale));
+            width: calc(74rem * var(--scale));
+        }
+    }
+
+}

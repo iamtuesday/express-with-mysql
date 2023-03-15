@@ -1,0 +1,49 @@
+.Login {
+  @apply bg-black min-h-screen grid grid-cols-2;
+}
+
+.LoginForm {
+  @apply bg-[#e3e3e3];
+
+  @media screen(laptop) {
+    padding: calc(20rem * var(--scale)) calc(30rem * var(--scale));
+    &-Title{
+    @apply font-dmsans font-bold text-center;
+    font-size: calc(3.5rem * var(--scale));
+    margin-bottom: calc(3rem * var(--scale));
+    }
+    &-Form {
+      @apply flex flex-col h-full;
+      gap: calc(1.5rem * var(--scale));
+    }
+  }
+}
+
+.LoginLabel {
+  @apply font-dmsans font-normal text-content text-[1.4rem] py-[2rem];
+  @media screen(laptop) {
+    font-size: calc(1.8rem * var(--scale));
+  }
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.LoginInput {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.LoginSubmit {
+  @screen laptop {
+    margin-top: calc(2rem * var(--scale));
+  }
+}
